@@ -108,17 +108,43 @@ background: #915325;
 }
 
 
-.series:nth-child(odd) .column:nth-child(odd):before{
+.series:nth-child(1) .column:nth-child(even):before,
+.series:nth-child(2) .column:nth-child(odd):before,
+.series:nth-child(3) .column:nth-child(even):before{
 content: "";
 position: absolute;
-background: black;
+background: #312f2f;
 height: 80%;
 width: 80%;
 margin: 10%;
 border-radius: 50%;
+border:2px solid #cccaca;
 }
 
+.series:nth-child(6) .column:nth-child(odd):before,
+.series:nth-child(7) .column:nth-child(even):before,
+.series:nth-child(8) .column:nth-child(odd):before{
+content: "";
+position: absolute;
+background: #cccaca;
+height: 80%;
+width: 80%;
+margin: 10%;
+border-radius: 50%;
+border:2px solid #312f2f;
+}
 
+.series:nth-child(1) .column:nth-child(even):hover:before,
+.series:nth-child(2) .column:nth-child(odd):hover:before,
+.series:nth-child(3) .column:nth-child(even):hover:before,
+.series:nth-child(6) .column:nth-child(odd):hover:before,
+.series:nth-child(7) .column:nth-child(even):hover:before,
+.series:nth-child(8) .column:nth-child(odd):hover:before{
+	box-shadow: 2px 2px 5px black;
+	height: 90%;
+	width: 90%;
+	margin: 5%;
+	}
 
 
 

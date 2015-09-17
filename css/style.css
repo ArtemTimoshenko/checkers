@@ -7,15 +7,35 @@ button{
 	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
 }
 *{
-font-size: 0;
+	font-size: 0;
 }
 
+.ba-square-box{
+position: relative;
+max-width: 70vh;
+}
+
+.ba-square-content{
+position: absolute;
+right: 0;
+bottom: 0;
+left: 0;
+top: 0;
+border:25px solid #ab420e;
+}
+
+.ba-square-box:before{
+content: "";
+display: block;
+padding-top: 100%;
+}
+
+
+
 main{
-	width: 80vh;
-	height: 80vh;
+	max-width: 70vh;
 	margin: 20px auto;
-	position: relative;
-	border:25px solid #ab420e;
+
 }
 
 .series {
@@ -28,11 +48,11 @@ main{
 
 .series:nth-child(1){
 	top: 0;
-	}
+}
 
 .series:nth-child(2){
 	top: 12.5%;
-	}
+}
 
 .series:nth-child(3){
 	top: 25%;
@@ -68,70 +88,70 @@ main{
 
 .column:nth-child(1){
 	left: 0;
-	}
+}
 
 .column:nth-child(2){
 	left: 12.5%;
-	}
+}
 
 .column:nth-child(3){
 	left: 25%;
-	}
+}
 
 .column:nth-child(4){
 	left: 37.5%;
-	}
+}
 
 .column:nth-child(5){
 	left: 50%;
-	}
+}
 
 .column:nth-child(6){
 	left: 62.5%;
-	}
+}
 .column:nth-child(7){
 	left: 75%;
-	}
+}
 
 .column:nth-child(8){
 	left: 87.5%;
-	}
+}
 
 .series:nth-child(odd) .column:nth-child(odd),
 .series:nth-child(even) .column:nth-child(even){
-background: #dbbd6a;
+	background: #dbbd6a;
 }
 
 .series:nth-child(odd) .column:nth-child(even),
 .series:nth-child(even) .column:nth-child(odd){
-background: #915325;
+	background: #915325;
 }
 
 
 .series:nth-child(1) .column:nth-child(even):before,
 .series:nth-child(2) .column:nth-child(odd):before,
 .series:nth-child(3) .column:nth-child(even):before{
-content: "";
-position: absolute;
-background: #312f2f;
-height: 80%;
-width: 80%;
-margin: 10%;
-border-radius: 50%;
-border:2px solid #cccaca;
+	content: "";
+	position: absolute;
+	background: #312f2f;
+	height: 80%;
+	width: 80%;
+	margin: 10%;
+	border-radius: 50%;
+	border:2px solid #cccaca;
 }
 
 .series:nth-child(6) .column:nth-child(odd):before,
 .series:nth-child(7) .column:nth-child(even):before,
 .series:nth-child(8) .column:nth-child(odd):before{
-content: "";
-position: absolute;
-background: #cccaca;
-height: 80%;
-width: 80%;
-margin: 10%;
-border-radius: 50%;
-border:2px solid #312f2f;
+	content: "";
+	position: absolute;
+	background: #cccaca;
+	height: 80%;
+	width: 80%;
+	margin: 10%;
+	border-radius: 50%;
+	border:2px solid #312f2f;
 }
 
 .series:nth-child(1) .column:nth-child(even):hover:before,
@@ -144,7 +164,7 @@ border:2px solid #312f2f;
 	height: 90%;
 	width: 90%;
 	margin: 5%;
-	}
+}
 
 
 
